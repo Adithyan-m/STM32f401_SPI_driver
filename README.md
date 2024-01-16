@@ -8,7 +8,7 @@ This project provides a custom SPI driver for the STM32F401 Black Pill microcont
 
 - **main.c**: This sample driver script demonstrates SPI communication with the popular MPU9250 IMU. The SPI frame size is set to 16 bits.
 
-- **spi.h / spi.c**: These files contain the implementation of the custom SPI driver. The driver supports full-duplex communication and hardware slave management. SPI speed is set to HSI (16MHz) divided by 64, but it can be modified as needed.
+- **spi.h / spi.c**: These files contain the implementation of the custom SPI driver. The driver supports full-duplex communication and hardware slave management. SPI baud rate is set to HSI (16MHz) divided by 64, but it can be modified as needed by changing bits 5:3 (BR[2:0]) of the SPI1_CR1 register.
 
 - **timer.h / timer.c**: The custom-written timer header and source files. These provide delay functionality using General Purpose Timer 2.
 
@@ -35,6 +35,6 @@ This project provides a custom SPI driver for the STM32F401 Black Pill microcont
     - Build the project using STM Cube IDE.
     - Flash the firmware onto your STM32F401 Black Pill.
 
-## Funstions
+## Functions
 
 Refer to the inline comments included the timer.c and spi.c files to understand the funtions
