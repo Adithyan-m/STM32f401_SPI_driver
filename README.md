@@ -37,4 +37,4 @@ This project provides a custom SPI driver for the STM32F401 Black Pill microcont
 
 ## Functions
 
-Refer to the inline comments included the timer.c and spi.c files to understand the funtions
+Refer to the inline comments included in the timer.c and spi.c files, to understand the capabilities of each functions
